@@ -4,7 +4,7 @@ PyTorch implementation of the paper:
 
 Weakly-supervised single-view image relighting [[arXiv](https://arxiv.org/abs/2303.13852)] [[Project Page](https://renjiaoyi.github.io/relighting/)].
 
-[Renjiao Yi](https://renjiaoyi.github.io/), [[Chenyang Zhu](http://www.zhuchenyang.net/), [Kai Xu](http://kevinkaixu.net/index.html).
+[Renjiao Yi](https://renjiaoyi.github.io/), [Chenyang Zhu](http://www.zhuchenyang.net/), [Kai Xu](http://kevinkaixu.net/index.html).
 
 ![](./teaser.png)
 
