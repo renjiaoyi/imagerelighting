@@ -73,8 +73,6 @@ def sp_layer(nm, L_SHcoeffs, gamma):
     c5 = torch.tensor(0.247708)
     L_SHcoeffs0 = L_SHcoeffs
     for i in range(0,9):
-        L_SHcoeffs[:]=0
-        L_SHcoeffs[:,i,:]=1
 
     
         M_row1 = torch.stack(
@@ -225,7 +223,7 @@ for hdrname_i in enumerate(hdrname):
 
             rendered = (
                 sh_layer(prepare_sh(albedo), prepare_sh(lm), L_SHcoeffs) * mask + 
-                0.05*sp_layer(prepare_sp(lm), L_SHcoeffs, 5) * mask #0.05 and 5 are S_p and \alpha predicted by the network or given by new materials
+                0.000002*sp_layer(prepare_sp(lm), L_SHcoeffs, 5) * mask #0.05 and 5 are S_p and \alpha predicted by the network or given by new materials
             )
             rendered = rendered/torch.max(rendered)
         
